@@ -8,6 +8,62 @@ Nama Anggota : ["Salma Fitri Bakhitoh
 https://markdownviewer.pages.dev/
 
 # Koordinat Titik, Jarak, Vektor, dan Garis. 
+## 1. SISTEM KOORDINAT
+### 1.1 Sistem Koordinat Kartesius 2D
+### 1.2 Sistem Koordinat Kartesius 3D
+### 1.3 Jarak Dua Titik (2D & 3D)
+### 1.4 Titik Tengah (2D & 3D)
+### 1.5 Perbandingan Ruas Giri (Titik Membagi Ruas)
+
+## 2. JARAK
+### 2.1 Jarak Dua Titik (2D & 3D)
+### 2.2 Jarak Titik ke Garis (2D & 3D)
+### 2.3 Jarak Titik ke Bidang (3D)
+### 2.4 Jarak Dua Garis (3D)
+   #### 2.4.1 Garis sejajar
+   #### 2.4.2 Garis bersilangan (*skew lines*)
+
+## 3. VEKTOR
+### 3.1 Definisi dan Notasi Vektor
+### 3.2 Besar (Panjang) Vektor
+### 3.3 Vektor Satuan
+### 3.4 Operasi Vektor
+   #### 3.4.1 Penjumlahan & pengurangan
+   #### 3.4.2 Perkalian skalar
+### 3.5 Perkalian Vektor
+   #### 3.5.1 *Dot product* (hasil kali titik)
+   #### 3.5.2 *Cross product* (hasil kali silang / vektor)
+### 3.6 Proyeksi Vektor
+   #### 3.6.1 Proyeksi skala
+   #### 3.6.2 Proyeksi vektor
+
+## 4. GARIS
+### 4.1 Persamaan Garis Lurus (2D)
+   #### 4.1.1 Bentuk umum
+   #### 4.1.2 Bentuk *slope*
+   #### 4.1.3 Gradien/*slope*
+   #### 4.1.4 Bentuk titik-*slope*
+   #### 4.1.5 Bentuk dua titik
+   #### 4.1.6 Bentuk *intercept*
+### 4.2 Hubungan Dua Garis (2D)
+   #### 4.2.1 Sejajar
+   #### 4.2.2 Tegak lurus
+   #### 4.2.3 Berpotongan: titik potong (sistem persamaan)
+   #### 4.2.4 Sudut antara dua garis
+### 4.3 Persamaan Garis di Ruang 3D
+   #### 4.3.1 Bentuk parametrik
+   #### 4.3.2 Bentuk simetri
+   #### 4.3.3 Bentuk vektor
+### 4.4 Hubungan Dua Garis (3D)
+   #### 4.4.1 Sejajar (*parallel*)
+   #### 4.4.2 Berpotongan (*intersecting*)
+   #### 4.4.3 Bersilangan / tidak sebidang (*skew lines*)
+   #### 4.4.4 Berimpit (*coincident*)
+### 4.5 Sudut dan Posisi Relatif
+   #### 4.5.1 Sudut antara dua garis
+   #### 4.5.2 Sudut antara garis dan bidang
+   #### 4.5.3 Sudut antara dua bidang
+     
 ## 1. Koordinat Titik di Ruang
 Untuk menentukan lokasi suatu titik pada bidang datar, diperlukan dua angka. Kita tahu bahwa setiap titik pada bidang datar dapat direpresentasikan sebagai pasangan terurut bilangan real $(a, b)$, $a$ adalah koordinat $x$ dan $b$ adalah koordinat $y$. Karena alasan ini, bidang datar disebut dua dimensi. Sedangkan, untuk menentukan lokasi suatu titik di ruang, diperlukan tiga angka. Kita merepresentasikan setiap titik di ruang dengan tiga bilangan real yang terurut $(a, b, c)$. 
 * Bidang (2D): Memerlukan 2 angka $(x, y)$ untuk menentukan posisi.
@@ -146,111 +202,7 @@ Penyelesaian:
 
 
 ## 3. Vektor dalam Ruang
-  1 . Definisi Vektor dalam Ruang
-      Vektor dalam ruang adalah besaran yang memiliki nilai dan arah yang terletak di dalam ruang tiga dimensi. Setiap vektor dapat dinyatakan dalam koordinat kartesius menggunakan tiga sumbu yang saling tegak lurus, yaitu sumbu $x$, sumbu $y$, dan sumbu $z$.
-
-Notasi vektor:
-  * Komponen:  $\overrightarrow{v} = (v_1, v_2, v_3)$
-  * Vektor Satuan:  $\overrightarrow{v} =v_1\overrightarrow{i}+v_2\overrightarrow{j}+v_3\overrightarrow{k}$
-  Dimana $\overrightarrow{i}$, $\overrightarrow{j}$, $\overrightarrow{k}$ adalah vektor basis pada sumbu $x$, $y$, $z$)
-
-2. Operasi Dasar Vektor
-
-  Jika diketahui $\overrightarrow{a} = (a_1, a_2, a_3)$ dan $\overrightarrow{b} = (b_1, b_2, b_3)$ , maka:
-  * Penjumlahan dan Pengurangan
-  Dilakukan dengan menjumlahkan atau mengurangkan komponen yang bersesuaian.
-  $\overrightarrow{a} \pm \overrightarrow{b} = (a_1 \pm b_1,a_2 \pm b_2, a_3 \pm b_3)$
-
-  * Perkalian Skalar
-  Jika $k$ adalah sebuah skalar, maka:
-   $k\overrightarrow{a} =(ka_1, ka_2, ka_3)$
-  * Panjang Vektor
-  Jarak dari titik pangkal ke titik ujung vektor:
-  $|\overrightarrow{a}| =\sqrt{a_1^2+a_2^2+a_3^2}$
-
-3. Perkalian Dua Vektor
-  Ada dua jenis perkalian utama dalam $R^3$:
-
-  * Dot Product (Perkalian Titik)
-
-     Hasil dari perkalian titik adalah sebuah skalar. Digunakan untuk mencari sudut atau proyeksi.
-    Rumus Komponen: $\overrightarrow{a}\overrightarrow{b} =a_1 b_1+a_2 b_2+a_3 b_3$
-    Rumus Sudut: $\overrightarrow{a} \overrightarrow{b} =|\overrightarrow{a}| |\overrightarrow{b}| cos \theta$
-
-     Sifat: $\overrightarrow{a} \overrightarrow{b} =|\overrightarrow{a}| |\overrightarrow{b}| sin \theta$  (Luas jajar genjang yang dibentuk kedua vektor).
-
-
-  * Cross Product (Perkalian Silang)
-    Hasil dari perkalian silang adalah sebuah vektor yang tegak lurus terhadap bidang yang dibentuk $\overrightarrow{a}$ dan $\overrightarrow{b}=$
-    
-
-
-
  
-4. Aplikasi Vektor dalam Ruang
-
-  * Vektor Posisi: Menentukan letak titik $P(x,y,z)$ relatif terhadap titik asal $O(0,0,0)$.
-  * Proyeksi Ortogonal: Mencari bayangan satu vektor pada arah vektor lainnya.
-  * Persamaan Garis dan Bidang: Digunakan dalam kalkulus peubah banyak untuk menentukan geometri ruang.
-
-5. Contoh Soal dan Penyelesaiannya:
-
-    Diketahui dua buah vektor a dan b  sebagai berikut:
-
-      $\overrightarrow{a} =2\overrightarrow{i}-\overrightarrow{j}+3\overrightarrow{k}$
-
-      $\overrightarrow{b} =\overrightarrow{i}+2\overrightarrow{j}-2\overrightarrow{k}$
-
-   Tentukanlah:
-   
-      1. Hasil perkalian titik $(a .b )$
-         
-      2. Panjang masing-masing vektor $\overrightarrow{a}$ dan $\overrightarrow{b}$
-         
-      3. Besar sudut yang dibentuk oleh kedua vektor
-
-     Penyelesaian:
-   
-      1. $\overrightarrow{a}.\overrightarrow{b} =(a_x.b_x) + (a_y.b_y) + (a_z.b_z)$
-
-         $\overrightarrow{a}.\overrightarrow{b} =(2.1)+(-1.2)+(3.-2)$
-
-         $\overrightarrow{a}.\overrightarrow{b} =2-2-6$
-
-         $\overrightarrow{a}.\overrightarrow{b} =-6$
-
-      2. Menggunakan rumus Pythagoras ruang: v =x2+y2+z2
-         * Panjang $\overrightarrow{a}$ :
-
-           $|\overrightarrow{a}| =\sqrt{2^2+(-1)^2+3^2}$
-
-           $|\overrightarrow{a}| =\sqrt{4+1+9}$
- 
-           $|\overrightarrow{a}| =\sqrt{14}$
-
-         * Panjang $overrightarrow{b}$ :
-
-             $|\overrightarrow{b}| =\sqrt{1^2+2^2+(-2)^2}$
-
-             $|\overrightarrow{b}|=\sqrt{1+4+4}$
- 
-             $|\overrightarrow{b}| =\sqrt{9}$
-
-             $|\overrightarrow{b}| =3$
-
-      3. Menggunakan definisi perkalian titik
-         $\overrightarrow{a}.\overrightarrow{b} =|\overrightarrow{a}|\overrightarrow{b}| cos \theta$
-
-         $cos\theta=\frac{\overrightarrow{a}.\overrightarrow{b}}{|\overrightarrow{a}| |\overrightarrow{b}|}$
-
-            $cos \theta=\frac{-61}{\sqrt{14}.3}$
-
-            $cos \theta=\frac{-2}{\sqrt{14}}$
-          
-            $cos \theta=-\frac{1}{7}\sqrt{14}$
-
-            $\theta=arccos(-\frac{\sqrt{14}}{7})=122,3 derajat$
-
 
 
 
