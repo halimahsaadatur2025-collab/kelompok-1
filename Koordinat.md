@@ -8,6 +8,61 @@ Nama Anggota : ["Salma Fitri Bakhitoh
 https://markdownviewer.pages.dev/
 
 # Koordinat Titik, Jarak, Vektor, dan Garis. 
+### 1. SISTEM KOORDINAT
+a. Sistem Koordinat Kartesius 2D
+b. Sistem Koordinat Kartesius 3D
+c. Jarak Dua Titik (2D & 3D)
+d. Titik Tengah (2D & 3D)
+e. Perbandingan Ruas Giri (Titik Membagi Ruas)
+
+### 2. JARAK
+a. Jarak Dua Titik (2D & 3D)
+b. Jarak Titik ke Garis (2D & 3D)
+c. Jarak Titik ke Bidang (3D)
+d. Jarak Dua Garis (3D)
+   * Garis sejajar
+   * Garis bersilangan (*skew lines*)
+
+### 3. VEKTOR
+a. Definisi dan Notasi Vektor
+b. Besar (Panjang) Vektor
+c. Vektor Satuan
+d. Operasi Vektor
+   * Penjumlahan & pengurangan
+   * Perkalian skalar
+e. Perkalian Vektor
+   * *Dot product* (hasil kali titik)
+   * *Cross product* (hasil kali silang / vektor)
+f. Proyeksi Vektor
+   * Proyeksi skala
+   * Proyeksi vektor
+
+### 4. GARIS
+a. Persamaan Garis Lurus (2D)
+   * Bentuk umum
+   * Bentuk *slope*
+   * Gradien/*slope*
+   * Bentuk titik-*slope*
+   * Bentuk dua titik
+   * Bentuk *intercept*
+b. Hubungan Dua Garis (2D)
+   * Sejajar
+   * Tegak lurus
+   * Berpotongan: titik potong (sistem persamaan)
+   * Sudut antara dua garis
+c. Persamaan Garis di Ruang 3D
+   * Bentuk parametrik
+   * Bentuk simetri
+   * Bentuk vektor
+d. Hubungan Dua Garis (3D)
+   * Sejajar (*parallel*)
+   * Berpotongan (*intersecting*)
+   * Bersilangan / tidak sebidang (*skew lines*)
+   * Berimpit (*coincident*)
+e. Sudut dan Posisi Relatif
+   * Sudut antara dua garis
+   * Sudut antara garis dan bidang
+   * Sudut antara dua bidang
 ## 1. Koordinat Titik di Ruang
 Untuk menentukan lokasi suatu titik pada bidang datar, diperlukan dua angka. Kita tahu bahwa setiap titik pada bidang datar dapat direpresentasikan sebagai pasangan terurut bilangan real $(a, b)$, $a$ adalah koordinat $x$ dan $b$ adalah koordinat $y$. Karena alasan ini, bidang datar disebut dua dimensi. Sedangkan, untuk menentukan lokasi suatu titik di ruang, diperlukan tiga angka. Kita merepresentasikan setiap titik di ruang dengan tiga bilangan real yang terurut $(a, b, c)$. 
 * Bidang (2D): Memerlukan 2 angka $(x, y)$ untuk menentukan posisi.
